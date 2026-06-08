@@ -86,12 +86,12 @@ export default function App() {
             className="absolute inset-0 flex flex-col items-center justify-center z-20 pointer-events-auto bg-[#050b14]"
           >
             <GeminiConstellationBackground />
-            <h1 className="text-4xl sm:text-6xl mb-12 text-center text-white [text-shadow:0_0_20px_#3399ff,0_0_40px_#3399ff] z-10 relative" style={{ fontFamily: 'Brush Script MT, "Great Vibes", cursive' }}>
+            <h1 className="text-4xl sm:text-6xl mb-12 text-center text-white [text-shadow:0_0_20px_#3399ff,0_0_40px_#3399ff] z-10 relative font-serif">
               每一岁，都珍贵
             </h1>
             <button
               onClick={() => setStep('cake')}
-              className="bg-white text-black px-8 py-3 rounded-full font-bold tracking-widest hover:bg-gray-200 transition-colors uppercase text-sm z-10 relative"
+              className="bg-white text-black px-8 py-3 rounded-full font-bold tracking-widest hover:bg-gray-200 transition-colors uppercase text-sm z-10 relative font-serif"
             >
               进入许愿
             </button>
@@ -111,16 +111,25 @@ export default function App() {
           >
             <div className="border border-blue-500/30 bg-blue-900/20 backdrop-blur-md rounded-[2rem] p-8 sm:p-12 text-center max-w-sm w-full mx-auto relative overflow-hidden shadow-2xl shadow-blue-900/50">
                <div className="absolute inset-0 border-2 border-blue-400 rounded-[2rem] opacity-20 pointer-events-none"></div>
-               <h2 className="text-3xl sm:text-4xl text-blue-300 mb-6 font-serif tracking-widest leading-relaxed">
-                 生日快乐<br/>王欣怡<br/>愿你的新岁<br/>如星辰般闪耀
-               </h2>
+               <div className="font-serif flex flex-col items-center mb-8 pt-2 text-center">
+                 <h2 className="text-4xl sm:text-5xl text-blue-200 tracking-widest font-medium mb-3">
+                   生日快乐
+                 </h2>
+                 <h3 className="text-3xl sm:text-4xl text-blue-300 tracking-[0.2em] mb-6">
+                   王欣怡
+                 </h3>
+                 <div className="h-[1px] w-12 bg-blue-400/50 mb-6"></div>
+                 <p className="text-xl sm:text-2xl text-blue-100/90 leading-[2.2] font-light tracking-wide">
+                   愿你的新岁<br/>如星辰般闪耀
+                 </p>
+               </div>
                
                <button
                  onClick={() => {
                    setIsBlown(false);
                    setStep('cake');
                  }}
-                 className="bg-[#1e3a8a] text-blue-100 px-6 py-4 rounded-full font-bold tracking-wider hover:bg-blue-800 transition-colors text-sm w-full shadow-lg shadow-blue-500/20"
+                 className="bg-[#1e3a8a] text-blue-100 px-6 py-4 rounded-full font-bold tracking-wider hover:bg-blue-800 transition-colors text-sm w-full shadow-lg shadow-blue-500/20 font-serif"
                >
                  再次许愿
                </button>
@@ -154,10 +163,10 @@ export default function App() {
                 exit={{ opacity: 0, transition: { duration: 0.5 } }}
                 className="w-full text-center mt-8"
               >
-                <h2 className="text-5xl sm:text-6xl text-blue-100 mb-4" style={{ fontFamily: 'Brush Script MT, "Great Vibes", cursive' }}>生日快乐</h2>
+                <h2 className="text-5xl sm:text-6xl text-blue-100 mb-4 font-serif">生日快乐</h2>
                 <div className="flex items-center justify-center gap-4">
                   <div className="h-[1px] w-12 bg-blue-400/50"></div>
-                  <p className="tracking-[0.4em] text-blue-300 text-sm uppercase">王欣怡</p>
+                  <p className="tracking-[0.4em] text-blue-300 text-sm uppercase font-serif">王欣怡</p>
                   <div className="h-[1px] w-12 bg-blue-400/50"></div>
                 </div>
               </motion.div>
@@ -174,7 +183,7 @@ export default function App() {
               >
                 <button
                   onClick={() => setIsBlown(true)}
-                  className="bg-blue-950/60 backdrop-blur-md border border-blue-500/40 text-blue-200 px-8 py-4 rounded-full font-bold tracking-widest hover:bg-blue-900/80 transition-all active:scale-95 shadow-lg shadow-blue-900/50 flex items-center justify-center"
+                  className="bg-blue-950/60 backdrop-blur-md border border-blue-500/40 text-blue-200 px-8 py-4 rounded-full font-bold tracking-widest hover:bg-blue-900/80 transition-all active:scale-95 shadow-lg shadow-blue-900/50 flex items-center justify-center font-serif"
                 >
                   吹蜡烛许愿
                 </button>

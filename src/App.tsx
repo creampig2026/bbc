@@ -294,7 +294,7 @@ function GeminiConstellationBackground() {
                   d={pathData}
                   initial={{ pathLength: 0, opacity: 0 }}
                   animate={{ pathLength: 1, opacity: 0.6 }}
-                  transition={{ duration: 3, delay: 1 + i * 0.2, ease: "easeInOut" }}
+                  transition={{ duration: 1.5, delay: 0.5 + i * 0.1, ease: "easeInOut" }}
                 />
               );
             })}

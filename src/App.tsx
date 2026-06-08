@@ -129,7 +129,7 @@ export default function App() {
                    setIsBlown(false);
                    setStep('cake');
                  }}
-                 className="bg-[#1e3a8a] text-blue-100 px-6 py-4 rounded-full font-bold tracking-wider hover:bg-blue-800 transition-colors text-sm w-full shadow-lg shadow-blue-500/20 font-serif"
+                 className="bg-[#1e3a8a] text-blue-100 px-12 py-3.5 rounded-full font-bold tracking-wider hover:bg-blue-800 transition-colors text-sm shadow-lg shadow-blue-500/20 font-serif"
                >
                  再次许愿
                </button>

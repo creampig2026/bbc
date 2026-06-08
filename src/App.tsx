@@ -303,7 +303,7 @@ function GeminiConstellationBackground() {
                   d={pathData}
                   initial={{ pathLength: 0, opacity: 0 }}
                   animate={{ pathLength: 1, opacity: 0.6 }}
-                  transition={{ duration: 1.5, delay: 0.5 + i * 0.1, ease: "easeInOut" }}
+                  transition={{ duration: 0.75, delay: 0.25 + i * 0.05, ease: "easeInOut" }}
                 />
               );
             })}

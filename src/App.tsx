@@ -111,7 +111,7 @@ export default function App() {
           >
             <div className="border border-blue-500/30 bg-blue-900/20 backdrop-blur-md rounded-[2rem] p-8 sm:p-12 text-center max-w-sm w-full mx-auto relative overflow-hidden shadow-2xl shadow-blue-900/50">
                <div className="absolute inset-0 border-2 border-blue-400 rounded-[2rem] opacity-20 pointer-events-none"></div>
-               <h2 className="text-4xl sm:text-5xl text-blue-300 mb-6 tracking-wide leading-relaxed" style={{ fontFamily: '"STXingkai", "Xingkai SC", "STKaiti", "Kaiti SC", "KaiTi", serif' }}>
+               <h2 className="text-3xl sm:text-4xl text-blue-300 mb-6 font-serif tracking-widest leading-relaxed">
                  生日快乐<br/>王欣怡<br/>愿你的新岁<br/>如星辰般闪耀
                </h2>
                
